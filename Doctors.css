@@ -1,0 +1,110 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+.doctors-container {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f3f4f6, #ffffff);
+}
+
+.doctors-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.doctor-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.doctor-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  width: 320px;
+  position: relative;
+  transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.doctor-card:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.doctor-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease-in-out;
+}
+
+.doctor-card:hover .doctor-image {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.doctor-card:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #00aced;
+}
+
+.doctor-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 15px 0 5px;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.doctor-card:hover .doctor-name {
+  color: #007bff;
+}
+
+.doctor-department {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.doctor-card:hover .doctor-department {
+  color: #0056b3;
+}

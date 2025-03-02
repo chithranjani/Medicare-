@@ -1,0 +1,43 @@
+.biography-container {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .biography-banner {
+    flex: 1;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 15px;
+  }
+  
+  .biography-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .biography-content {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .biography-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .biography-content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
